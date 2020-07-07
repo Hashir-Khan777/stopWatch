@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+
+body {
+  display: flex;
+  background-color: black;
+}
+
+.watch {
+  transition: 0.3s linear;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.stopWatch {
+  display: flex;
+  transition: 0.2s all;
+  justify-content: center;
+  padding: 40px 0px 60px 0px;
+}
+
+.time {
+  width: 200px;
+  transition: 0.2s all;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 10px 0px 10px;
+  font-size: 45px;
+  font-weight: 800;
+  background-color: #039be5;
+  color: #283593;
+}
+
+.head {
+  transition: 0.2s all;
+  color: #039be5;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+button {
+  padding: 15px 25px 15px 25px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  border: 1px solid #039be5;
+  cursor: pointer;
+  transition: 0.2s all;
+  margin: 0px 15px 0px 15px;
+  color: #283593;
+}
+
+button:hover {
+  background-color: #039be5;
+}
+
+@media screen and (max-width: 990px) {
+  .time {
+    width: 130px;
+    font-size: 30px;
+  }
+  .head {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .time {
+    width: 60px;
+    font-size: 25px;
+  }
+  .head {
+    font-size: 30px;
+  }
+  button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .time {
+    width: 45px;
+    font-size: 17px;
+  }
+  .head {
+    font-size: 20px;
+  }
+  button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+}
