@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div class="watch">
-        <div class="heading">
-            <h1 class="head"> Stop Watch </h1>
-        </div>
-        <div class="stopWatch">
-            <h1 class="time min"> 0 </h1>
-            <h1 class="time sec"> 0 </h1>
-            <h1 class="time msec"> 0 </h1>
-        </div>
-        <div class="buttons">
-            <button class="timeBtn start" onclick="onWatch()"> Start </button>
-            <button class="timeBtn pause" onclick="pauseWatch()"> Pause </button>
-            <button class="timeBtn reset" onclick="resetWatch()"> Reset </button>
-        </div>
+  <body>
+    <div class="table_set_time">
+      <table>
+        <tr>
+          <td>
+            <label for="mins"><h1>Minutes:</h1></label>
+          </td>
+          <td>
+            <input type="number" id="mins" placeholder="Enter minutes..." />
+          </td>
+          <td>
+            <button class="timeBtn set" onclick="setTime()">Set Time</button>
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
-<script src="app.js"></script>
-
+    <div class="watch none">
+      <div class="heading">
+        <h1 class="head">Stop Watch</h1>
+      </div>
+      <div class="stopWatch">
+        <h1 class="time min">0</h1>
+        <h1 class="time sec">0</h1>
+        <h1 class="time msec">0</h1>
+      </div>
+      <div class="buttons">
+        <button class="timeBtn start" onclick="onWatch()">Start</button>
+        <button class="timeBtn pause" onclick="pauseWatch()">Pause</button>
+        <button class="timeBtn reset" onclick="resetWatch()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>

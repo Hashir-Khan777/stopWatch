@@ -104,6 +104,31 @@ button:hover {
   }
 }
 
+.table_set_time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #039be5;
+}
+
+#mins {
+  margin: 0 10px;
+  font-size: 18px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border: 1px solid #039be5;
+  border-radius: 4px;
+  color: #039be5;
+}
+
+#mins::placeholder {
+  color: #039be5;
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 500px) {
   .time {
     width: 80px;
@@ -132,4 +157,8 @@ button:hover {
     border-radius: 10px;
     margin-bottom: 15px;
   }
+}
+
+.none {
+  display: none;
 }
